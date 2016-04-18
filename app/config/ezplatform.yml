@@ -14,12 +14,14 @@ ezpublish:
           - fr
           - de
           - no
+          - pudelek
         groups:
             site_group:
                 - site
                 - fr
                 - de
                 - no
+                - pudelek
         default_siteaccess: site
         match:
             URIElement: 1
@@ -49,3 +51,12 @@ ezpublish:
             languages:
                 - nor-NO
                 - eng-GB
+        pudelek:
+            languages:
+                - eng-GB
+            content:
+                tree_root:
+                    location_id: 103
+                    excluded_uri_prefixes:
+                        - /media
+                        - /users
